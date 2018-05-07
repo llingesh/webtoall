@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:29:34 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Omid - Creative Material Design Website Template</title>
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/material-kit.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <!-- Skin switcher -->
+    <!-- Manually link your desire skin -->
+    <style type="text/css">
+    .skins {
+        position: fixed;
+        top: 190px;
+        left: -120px;
+        transition: .3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .skins:hover {
+        left: 0;
+    }
+    
+    .skin-colors {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        background-color: #fff;
+        width: 120px;
+        border: 1px solid #e7e7e7;
+    }
+    
+    .skin-colors li {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: -3px;
+        line-height: 0;
+        transition: .3s ease-in-out;
+    }
+    
+    .skin-colors li:hover {
+        opacity: .7;
+    }
+    
+    .skin-colors li.active::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 20px;
+        width: 32px;
+        line-height: 32px;
+        text-align: center;
+        position: absolute;
+        color: #fff;
+    }
+    
+    .skin-toggler {
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        right: -49px;
+        top: 0;
+        background-color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #888;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+    }
+    
+    .skin-toggler .fa {
+        transform: rotate(30deg);
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        animation: gear 1s infinite;
+    }
+    
+    @keyframes gear {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    </style>
+</head>
+
+<body class="not-onepage">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Header  -->
+    <div class="header">
+        <nav id="sticky-nav" class="navbar navbar-custom sticky navbar-center">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="" href="#">
+                        <img src="img/logo.png" alt="Logo" class="img-responsive navbar-brand">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navigation-example">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               Blog
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="blog-right.html">Blog right sidebar</a></li>
+                                <li><a href="blog-left.html">Blog left sidebar</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-single.html">Sinlge post</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               portfolio
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="portfolio1.html">Portfolio 4 Column</a></li>
+                                <li><a href="portfolio2.html">Portfolio 3 Column</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="single-page-header header-filter" data-parallax="active" style="background-image: url('img/bg1.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h1 class="title">What is UX design really?</h1>
+                        <br>
+                        <div class="post-author">
+                            <img src="img/users/avatar5.png" alt="User avatar" class="img-responsive img-circle">
+                            <p>
+                                By <a href="#author"><i>Brad Schmidt, UX/ Desinger</i></a>
+                                <br> On <a href="#date"><i>September 29, 2016 </i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <div class="main">
+        <div class="container">
+            <div class="section section-text">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p> One of the most common misconceptions people have is that User Experience Design is all about usability. It’s easy to see why – usability means that a product is both usable and useful.</p>
+                        <p>When you walk into an empty room, you can instantly imagine what purpose it will serve. Glance around and you get an idea for how to turn that space into anything that you want it to be. You can use it as a living room, an office, or a bedroom. It all depends on what furniture you choose and where you put it. The empty room is usable, but it’s not useful until you fill it.</p>
+                        <p>
+                            In software, “the room” a user enters is never empty. Every software product has a user-facing side that was built for people to interact with. That interaction becomes an experience they go through when they use the product. It’s the UX designer’s job to make that experience a great one.
+                        </p>
+                        <h3>
+                                User Experience Design is about feelings
+                            </h3>
+                        <img src="img/blog/content-blog.jpg" alt="bl" class="img-responsive">
+                        <p>
+                            Ask yourself this question –what makes for a great experience? Is it the fact that it’s memorable? Not really, because it’s just as easy, if not easier, to recall one that was awful. Remember enterprise software circa 1990 to 2006? You had to fight it to make it do something, and products like that still exist. The emotional trauma they inflict heals slowly, because using them frustrates us to no end. Good user experience doesn’t have to be memorable, but it does have to make you feel something. Ideally, it should make you feel like getting a product to solve your problem was easy. Effortless, even.
+                        </p>
+                        <blockquote>
+                            Design isn’t just about problem solving; it’s about creating a more humane future. – Dan Saffer, The End of Design as We Know it.
+                        </blockquote>
+                        <p>
+                            People always talk about products that delight the user, but often misunderstand what that means. It’s not about the vibrant colors or how beautiful the design is. Great user experience is often completely disconnected from how the product looks. Sometimes the best user interface is no user interface, because UX is about how something works, and not how it looks.
+                        </p>
+                        <p>
+                            You can delight a person by making your product work so well that they forget that it’s there. To delight the user is to charm them every time they interact with your product. Which means that:
+                        </p>
+                        <h3>UX Design is about Behavior</h3>
+                        <img src="img/blog/content-blog2.jpg" alt="blog" class="img-responsive">
+                        <p>
+                            People are always in the middle of something. Living their lives, working on projects, building towards a goal they have. The UX Designer has to anticipate user behavior when they interact with a product, and how that interaction fits into their goals.
+                        </p>
+                        <p>
+                            If you’re the end user – will it make you stop everything you’re doing? Does it have to? If it does – will that interaction be worth it for you?
+                        </p>
+                        <a href="http://thenextweb.com/dd/2016/08/11/what-the-hell-is-ux-design/" target="_blank">More here.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-blog-info">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row post-footer-meta">
+                            <div class="col-sm-6">
+                                <div class="blog-tags">
+                                    Tags:
+                                    <span class="label label-primary">UX/UI</span>
+                                    <span class="label label-primary">Tech</span>
+                                    <span class="label label-primary">Design</span>
+                                    <span class="label label-primary">Code</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="#blog" class="btn btn-google pull-right">
+                                    <i class="fa fa-google"></i> 123
+                                </a>
+                                <a href="#blog" class="btn btn-twitter pull-right">
+                                    <i class="fa fa-twitter"></i> 233
+                                </a>
+                                <a href="#blog" class="btn btn-facebook pull-right">
+                                    <i class="fa fa-facebook-square"></i> 332
+                                </a>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="card card-profile card-plain single-post-profile">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="card-avatar">
+                                        <a href="#blog">
+                                            <img class="img img-responsive img-circle" src="img/users/avatar5.png" alt="img">
+                                        </a>
+                                        <div class="ripple-container"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="card-title">Jane Alix</h4>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A rerum ratione sapiente provident asperiores molestias neque error repellat deleniti amet.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-default pull-right">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-comments">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="media-area">
+                            <h3 class="title">4 Comments</h3>
+                            <div class="media">
+                                <a class="pull-left" href="#blog">
+                                    <div class="avatar">
+                                        <img class="media-object img-responsive img-circle" src="img/users/avatar1.png" alt="..." />
+                                    </div>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Mary Craig <small>- 20 minutes ago</small></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolorem aut quaerat, sequi ut, sapiente suscipit? Quo eligendi, iusto hic.</p>
+                                    <div class="media-footer">
+                                        <a href="#blog" class="btn btn-primary btn-simple pull-right" title="Reply to Comment">
+                                            <i class="fa fa-reply"> </i> Reply
+                                        </a>
+                                        <a href="#blog" class="btn btn-danger btn-simple pull-right">
+                                            <i class="fa fa-heart"> </i> 243
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#blog">
+                                    <div class="avatar">
+                                        <img class="media-object img-responsive img-circle" alt="User avatar" src="img/users/avatar2.png">
+                                    </div>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Angel Baker <small> Yesterday</small></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quis, quasi voluptate. Quisquam dolorum, suscipit ducimus ratione harum nesciunt sequi quos beatae.</p>
+                                    <div class="media-footer">
+                                        <a href="#blog" class="btn btn-primary btn-simple pull-right" title="Reply to Comment">
+                                            <i class="fa fa-reply"> </i> Reply
+                                        </a>
+                                        <a href="#blog" class="btn btn-default btn-simple pull-right">
+                                            <i class="fa fa-heart"> </i> 25
+                                        </a>
+                                    </div>
+                                    <div class="media">
+                                        <a class="pull-left" href="#blog">
+                                            <div class="avatar">
+                                                <img class="media-object img-responsive img-circle" alt="user avatar" src="img/users/avatar3.png">
+                                            </div>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Maurice Collins<small> - 12 Hours Ago</small></h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, aperiam quidem animi accusamus! Sit quaerat, aperiam?
+                                            </p>
+                                            <div class="media-footer">
+                                                <a href="#blog" class="btn btn-primary btn-simple pull-right" title="Reply to Comment">
+                                                    <i class="fa fa-reply"> </i> Reply
+                                                </a>
+                                                <a href="#blog" class="btn btn-default btn-simple pull-right">
+                                                    <i class="fa fa-heart"> </i> 2
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#blog">
+                                    <div class="avatar">
+                                        <img class="media-object img-responsive img-circle" src="img/users/avatar4.png" alt="User avatar" />
+                                    </div>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Stacy Owens <small> - 2 days ago</small></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolorem aut quaerat, sequi ut, sapiente suscipit? Quo eligendi, iusto hic.</p>
+                                    <div class="media-footer">
+                                        <a href="#blog" class="btn btn-primary btn-simple pull-right" title="Reply to Comment">
+                                            <i class="fa fa-reply"> </i> Reply
+                                        </a>
+                                        <a href="#blog" class="btn btn-danger btn-simple pull-right">
+                                            <i class="fa fa-heart"> </i> 343
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="title">Post your comment</h3>
+                        <div class="media media-post">
+                            <div class="media-body">
+                                <form class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Your Name</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Your Email</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Your comment</label>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-4 text-center">
+                                            <button class="btn btn-primary btn-raised">
+                                                Post comment
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end media-post -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subsctibe -->
+    <div class="subscribe bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="title">Subscribte to our news letter</h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eius.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </span>
+                                    <div class="form-group is-empty">
+                                        <input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-info">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="container footer-widget">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <a href="#"><img src="img/logo.png" alt="Company logo" class="footer-logo img-responsive"></a>
+                    <div class="social">
+                        <a href="#social"><i class="fa fa-facebook"></i></a>
+                        <a href="#social"><i class="fa fa-twitter"></i></a>
+                        <a href="#social"><i class="fa fa-google-plus"></i></a>
+                        <a href="#social"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#social"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <!-- /Social -->
+                    <hr class="up-hr">
+                    <button class="btn btn-primary light btn-sm">Purchase</button>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Product</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Features</a></li>
+                        <li><a href="#link">Support</a></li>
+                        <li><a href="#link">Help</a></li>
+                        <li><a href="#link">Plan and Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Link</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Blog</a></li>
+                        <li><a href="#link">About us</a></li>
+                        <li><a href="#link">Privacy</a></li>
+                        <li><a href="#link">Term and Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <div class="newsletter">
+                        <h6 class="typo-light">Newsletter</h6>
+                        <p>Sign up for the latest news &amp; offers.</p>
+                        <div id="subscribe-success"></div>
+                        <form class="form-widget subscribe-form">
+                            <div class="field-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                                <button type="submit" id="submit" class="btn footer-btn btn-primary"><i class="fa fa-envelope-o"></i></button>
+                            </div>
+                            <div class="msg-wrp"></div>
+                        </form>
+                        <!-- /form -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Built with <i class="fa fa-heart"></i> by Bighero 2016</p>
+        </div>
+    </footer>
+    <!-- ./Footer section -->
+    <!--   Core JS Files   -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script src="js/material.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- Color Switcher -->
+    <script type="text/javascript">
+    $(function() {
+
+        $("head").append('<link id="skin-css" rel="stylesheet">');
+
+        $('.skin-colors li').on('click', function() {
+            $('.skins li').removeClass('active');
+            $(this).addClass('active');
+            $('#skin-css').attr('href', 'css/colors/' + $(this).data('skin') + '.css');
+        });
+
+    });
+    </script>
+    <div class="skins">
+        <ul class="skin-colors">
+            <li data-skin="default" style="background-color: #766dcc" class="active"></li>
+            <li data-skin="indigo" style="background-color: #3f51b5"></li>
+            <li data-skin="amethyst" style="background-color: #9b59b6"></li>
+            <li data-skin="blue" style="background-color: #00a3d3"></li>
+            <li data-skin="dodger-blue" style="background-color: #33b3d3"></li>
+            <li data-skin="cyan" style="background-color: #00bcd4"></li>
+            <li data-skin="green" style="background-color: #27ae60"></li>
+            <li data-skin="light-green" style="background-color: #8bc34a"></li>
+            <li data-skin="lime" style="background-color: #cddc39"></li>
+            <li data-skin="orange" style="background-color: #f39c12"></li>
+            <li data-skin="amber" style="background-color: #ffc107"></li>
+            <li data-skin="pink" style="background-color: #ea4c89"></li>
+            <li data-skin="red" style="background-color: #D64343"></li>
+            <li data-skin="teal" style="background-color: #009688"></li>
+        </ul>
+        <span class="skin-toggler"><i class="fa fa-gear"></i></span>
+    </div>
+    <!-- END Skin switcher -->
+</body>
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:29:38 GMT -->
+</html>

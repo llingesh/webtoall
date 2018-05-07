@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:29:29 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Omid - Creative Material Design Website Template</title>
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/material-kit.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <!-- Skin switcher -->
+    <!-- Manually link your desire skin -->
+    <style type="text/css">
+    .skins {
+        position: fixed;
+        top: 190px;
+        left: -120px;
+        transition: .3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .skins:hover {
+        left: 0;
+    }
+    
+    .skin-colors {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        background-color: #fff;
+        width: 120px;
+        border: 1px solid #e7e7e7;
+    }
+    
+    .skin-colors li {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: -3px;
+        line-height: 0;
+        transition: .3s ease-in-out;
+    }
+    
+    .skin-colors li:hover {
+        opacity: .7;
+    }
+    
+    .skin-colors li.active::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 20px;
+        width: 32px;
+        line-height: 32px;
+        text-align: center;
+        position: absolute;
+        color: #fff;
+    }
+    
+    .skin-toggler {
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        right: -49px;
+        top: 0;
+        background-color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #888;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+    }
+    
+    .skin-toggler .fa {
+        transform: rotate(30deg);
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        animation: gear 1s infinite;
+    }
+    
+    @keyframes gear {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    </style>
+</head>
+
+<body class="not-onepage">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Header  -->
+    <div class="header">
+        <nav id="sticky-nav" class="navbar navbar-custom sticky">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="" href="#">
+                        <img src="img/logo.png" alt="Logo" class="img-responsive navbar-brand">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navigation-example">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               Blog
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="blog-right.html">Blog right sidebar</a></li>
+                                <li><a href="blog-left.html">Blog left sidebar</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-single.html">Sinlge post</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               portfolio
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="portfolio1.html">Portfolio 4 Column</a></li>
+                                <li><a href="portfolio2.html">Portfolio 3 Column</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-hero">
+            <div class="container">
+                <h3>About us</h3>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- About -->
+    <div class="about">
+        <div class="container">
+            <div class="about-us">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="title">Who we are ?</h2>
+                        <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias harum iusto ipsa in nobis, optio, mollitia!</h5>
+                    </div>
+                </div>
+                <!-- Our mession -->
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <img src="img/office-space.jpg" alt="" class="img-responsive img-thumbnail img-about">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title"> Our Mession </h2>
+                        <div id="acordeon">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-border panel-default" role="tablist">
+                                    <div class="panel-heading" role="tab">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                            <h4 class="panel-title">What we do ? <i class="fa fa-angle-up"></i> </h4>
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" role="tabpanel">
+                                        <div class="panel-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolorum iure adipisci recusandae autem, fugit incidunt aliquam ducimus sint, reprehenderit laborum laudantium, quos veniam aliquid accusamus iste inventore veritatis? Corrupti.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-border panel-default" role="tablist">
+                                    <div class="panel-heading" role="tab">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseOne" class="collapsed" aria-expanded="false">
+                                            <h4 class="panel-title">Why We do ? <i class="fa fa-angle-up"></i></h4>
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                        <div class="panel-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi blanditiis sit aliquam facere excepturi voluptas autem reiciendis numquam totam exercitationem ratione, harum quibusdam suscipit. Illo deserunt rerum quo, architecto reprehenderit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-border panel-default" role="tablist">
+                                    <div class="panel-heading" role="tab">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseOne" class="collapsed" aria-expanded="false">
+                                            <h4 class="panel-title">How it works <i class="fa fa-angle-up"></i></h4>
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                        <div class="panel-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nisi, quas magnam accusamus quo repellat maxime aperiam eum blanditiis voluptatum.
+                                            </p>
+                                            <ul class="about-ul">
+                                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Step 1</li>
+                                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Step 2</li>
+                                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Step 3</li>
+                                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Done !</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end acordeon -->
+                    </div>
+                </div>
+                <!-- End mession -->
+            </div>
+        </div>
+        <!-- Our skill -->
+        <section class="bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="title">Our skill</h2>
+                        <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias harum iusto ipsa in nobis, optio, mollitia!</h5>
+                    </div>
+                    <div class="col col-md-6 col-md-push-6">
+                        <img src="img/bg2.jpg" alt="" class="img-responsive img-thumbnail img-about">
+                    </div>
+                    <div class="col col-md-6 col-md-pull-6">
+                        <h3>What can we do ?</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, distinctio.
+                        </p>
+                        <div class="skills-lists">
+                            <div class="skill-1">
+                                <h4>Web Design</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                        <span class="skill-bar-text">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-2">
+                                <h4>Web Development</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span class="skill-bar-text">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-3">
+                                <h4>Photoshop</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="skill-bar-text">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-4">
+                                <h4>UX / UI</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        <span class="skill-bar-text">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End our skill -->
+        <!-- Team -->
+        <section class="section" id="team">
+            <div class="team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center wow fadeInUp">
+                            <h2 class="title">Our awesome team</h2>
+                            <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestiae minima pariatur voluptatum ipsum?</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="#link">
+                                        <img class="img" src="img/team/1.jpg" alt="team" />
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h4 class="card-title">Chang lee</h4>
+                                    <h6 class="category text-muted">CEO / Co-Founder</h6>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos numquam ut rem provident, consequuntur et.
+                                    </p>
+                                    <div class="footer">
+                                        <a href="#link" class="btn btn-just-icon btn-facebook btn-round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-twitter btn-round">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-linkedin btn-round">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-dribbble btn-round">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="#link">
+                                        <img class="img" src="img/team/2.jpg" alt="team" />
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h4 class="card-title">George F</h4>
+                                    <h6 class="category text-muted">Web Developer</h6>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus similique, consequuntur nemo facere sed culpa!
+                                    </p>
+                                    <div class="footer">
+                                        <a href="#link" class="btn btn-just-icon btn-facebook btn-round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-twitter btn-round">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-linkedin btn-round">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-dribbble btn-round">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="#link">
+                                        <img class="img" src="img/team/3.jpg" alt="team" />
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h4 class="card-title">Khan Jee</h4>
+                                    <h6 class="category text-muted">Web Designer</h6>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laborum, culpa consequuntur fugiat ut, dicta.
+                                    </p>
+                                    <div class="footer">
+                                        <a href="#link" class="btn btn-just-icon btn-facebook btn-round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-twitter btn-round">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-linkedin btn-round">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="#link" class="btn btn-just-icon btn-dribbble btn-round">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End team -->
+    </div>
+    <!-- End about -->
+    <!-- Subscribe -->
+    <div class="subscribe bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="title">Subscribte to our news letter</h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eius.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </span>
+                                    <div class="form-group is-empty">
+                                        <input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-info">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End subscribe  -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="container footer-widget">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <a href="#"><img src="img/logo.png" alt="Company logo" class="footer-logo img-responsive"></a>
+                    <div class="social">
+                        <a href="#social"><i class="fa fa-facebook"></i></a>
+                        <a href="#social"><i class="fa fa-twitter"></i></a>
+                        <a href="#social"><i class="fa fa-google-plus"></i></a>
+                        <a href="#social"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#social"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <!-- /Social -->
+                    <hr class="up-hr">
+                    <button class="btn btn-primary light btn-sm">Purchase</button>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Product</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Features</a></li>
+                        <li><a href="#link">Support</a></li>
+                        <li><a href="#link">Help</a></li>
+                        <li><a href="#link">Plan and Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Link</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Blog</a></li>
+                        <li><a href="#link">About us</a></li>
+                        <li><a href="#link">Privacy</a></li>
+                        <li><a href="#link">Term and Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <div class="newsletter">
+                        <h6 class="typo-light">Newsletter</h6>
+                        <p>Sign up for the latest news &amp; offers.</p>
+                        <div id="subscribe-success"></div>
+                        <form class="form-widget subscribe-form">
+                            <div class="field-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                                <button type="submit" id="submit" class="btn footer-btn btn-primary"><i class="fa fa-envelope-o"></i></button>
+                            </div>
+                            <div class="msg-wrp"></div>
+                        </form>
+                        <!-- /form -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Built with <i class="fa fa-heart"></i> by Bighero 2016</p>
+        </div>
+    </footer>
+    <!-- ./Footer section -->
+    <!--   Core JS Files   -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script src="js/material.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- Color Switcher -->
+    <script type="text/javascript">
+    $(function() {
+
+        $("head").append('<link id="skin-css" rel="stylesheet">');
+
+        $('.skin-colors li').on('click', function() {
+            $('.skins li').removeClass('active');
+            $(this).addClass('active');
+            $('#skin-css').attr('href', 'css/colors/' + $(this).data('skin') + '.css');
+        });
+
+    });
+    </script>
+    <div class="skins">
+        <ul class="skin-colors">
+            <li data-skin="default" style="background-color: #766dcc" class="active"></li>
+            <li data-skin="indigo" style="background-color: #3f51b5"></li>
+            <li data-skin="amethyst" style="background-color: #9b59b6"></li>
+            <li data-skin="blue" style="background-color: #00a3d3"></li>
+            <li data-skin="dodger-blue" style="background-color: #33b3d3"></li>
+            <li data-skin="cyan" style="background-color: #00bcd4"></li>
+            <li data-skin="green" style="background-color: #27ae60"></li>
+            <li data-skin="light-green" style="background-color: #8bc34a"></li>
+            <li data-skin="lime" style="background-color: #cddc39"></li>
+            <li data-skin="orange" style="background-color: #f39c12"></li>
+            <li data-skin="amber" style="background-color: #ffc107"></li>
+            <li data-skin="pink" style="background-color: #ea4c89"></li>
+            <li data-skin="red" style="background-color: #D64343"></li>
+            <li data-skin="teal" style="background-color: #009688"></li>
+        </ul>
+        <span class="skin-toggler"><i class="fa fa-gear"></i></span>
+    </div>
+    <!-- END Skin switcher -->
+</body>
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:29:34 GMT -->
+</html>
