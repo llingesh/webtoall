@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:26:28 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Webtoall</title>
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/material-kit.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <!-- Skin switcher -->
+    <!-- Manually link your desire skin -->
+    <style type="text/css">
+    .skins {
+        position: fixed;
+        top: 190px;
+        left: -120px;
+        transition: .3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .skins:hover {
+        left: 0;
+    }
+    
+    .skin-colors {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        background-color: #fff;
+        width: 120px;
+        border: 1px solid #e7e7e7;
+    }
+    
+    .skin-colors li {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: -3px;
+        line-height: 0;
+        transition: .3s ease-in-out;
+    }
+    
+    .skin-colors li:hover {
+        opacity: .7;
+    }
+    
+    .skin-colors li.active::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 20px;
+        width: 32px;
+        line-height: 32px;
+        text-align: center;
+        position: absolute;
+        color: #fff;
+    }
+    
+    .skin-toggler {
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        right: -49px;
+        top: 0;
+        background-color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #888;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+    }
+    
+    .skin-toggler .fa {
+        transform: rotate(30deg);
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        animation: gear 1s infinite;
+    }
+    
+    @keyframes gear {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Header  -->
+    <div class="header">
+        <nav id="sticky-nav" class="navbar navbar-custom sticky navbar-center">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="" href="#">
+                        <img src="img/logo.png" alt="Logo" class="img-responsive navbar-brand">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navigation-example">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               Developement 
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="blog-right.html">Blog right sidebar</a></li>
+                                <li><a href="blog-left.html">Blog left sidebar</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-single.html">Sinlge post</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               Digital Marketing
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li><a href="portfolio1.html">Portfolio 4 Column</a></li>
+                                <li><a href="portfolio2.html">Portfolio 3 Column</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header slider -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="page-header header-filter" style="background-image: url('img/bg1.jpg');">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 text-center">
+                                        <h1 class="title">Material Design Template</h1>
+                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt delectus quasi inventore quia, autem nesciunt facere ea! Quidem eos, totam aspernatur, ab illo earum tenetur dolorum autem possimus in dolores.</h4>
+                                        <br />
+                                        <div class="buttons">
+                                            <button class="btn btn-primary btn-lg">
+                                                <i class="fa fa-send"> </i> Learn More
+                                            </button>
+                                            <button class="btn btn-info btn-lg">
+                                                <i class="fa fa-wrench"></i> Try Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="page-header header-filter" style="background-image: url('img/bg2.jpg');">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 text-center">
+                                        <h1 class="title">Responsive and Creative</h1>
+                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolor perspiciatis in, libero, similique possimus. Unde iste nam praesentium, illum aut esse, dolores, natus assumenda in corporis quas nostrum enim?</h4>
+                                        <br />
+                                        <h6>Connect with us</h6>
+                                        <div class="buttons">
+                                            <a href="#" class="btn btn-just-icon btn-white btn-simple btn-lg">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-just-icon btn-white btn-simple btn-lg">
+                                                <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-just-icon btn-white btn-simple btn-lg">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-just-icon btn-white btn-simple btn-lg">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="page-header header-filter" style="background-image: url('img/bg3.jpg');">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 text-center">
+                                        <h1 class="title">Inspiring Design and UI</h1>
+                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe neque deleniti, voluptatum sequi laborum eius, ullam mollitia, rem, fugiat dolorum ratione consequuntur fuga debitis reprehenderit quidem. Quasi commodi a id.</h4>
+                                        <br />
+                                        <div class="buttons">
+                                            <button class="btn btn-success btn-lg">
+                                                <i class="fa fa-share-alt"> </i> Share
+                                            </button>
+                                            <button class="btn btn-danger btn-lg">
+                                                <i class="fa fa-shopping-cart"> </i> Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End Header slider -->
+    </div>
+    <!-- End Header -->
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Who we are ?</h2>
+                <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nobis, explicabo et nemo harum perferendis quibusdam pariatur enim atque animi.</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info text-center">
+                        <div class="icon icon-primary">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <h4 class="info-title">Responsive Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, consequuntur.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info text-center">
+                        <div class="icon icon-success">
+                            <i class="fa fa-html5"> </i>
+                        </div>
+                        <h4 class="info-title">HTML5 Standard</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, pariatur?</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info text-center">
+                        <div class="icon icon-danger">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h4 class="info-title">Material Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, labore.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info text-center">
+                        <div class="icon icon-info">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                        <h4 class="info-title">Creative</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, placeat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-about">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="title">What we do ?</h2>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="fa fa-television"> </i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe optio sapiente voluptates.</p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="fa fa-gears"> </i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Web Developmenet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit reiciendis ipsum accusantium!</p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">SEO Optization</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio ratione dicta!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="img-container">
+                            <img src="img/office-space.jpg" alt="img" class="img-responsive img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Blog news -->
+    <section class="blog bg-gray">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Latest Blog</h2>
+                <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nobis, explicabo et nemo harum perferendis quibusdam pariatur enim atque animi.</h5>
+            </div>
+            <div class="owl-carousel">
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog1.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-info">Technology</h6>
+                            <p> <i class="fa fa-clock-o"></i> 27 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">Apple's latest iPhones: USB-C ya later, for now</a>
+                                </h4>
+                            <p class="card-description">
+                                A few hours before the Apple event, I made a bet with a coworker: I think this new iPhone is going.<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog2.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-success">
+                                    Startups
+                            </h6>
+                            <p> <i class="fa fa-clock-o"></i> 20 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">Facing your fears with Virtual Reality</a>
+                            </h4>
+                            <p class="card-description">
+                                Fear isn’t always such a bad thing. It is, after all, a self-preservation response programmed into our DNA that can be useful in keeping us out of harm’s way.<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog3.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-danger">
+                                    Marketing
+                            </h6>
+                            <p> <i class="fa fa-clock-o"></i> 18 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">Teaching machines to predict the future</a>
+                            </h4>
+                            <p class="card-description">
+                                Our ability to anticipate actions is thanks to intuitions born out of a lifetime of experiences.<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog4.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-info">Technology</h6>
+                            <p> <i class="fa fa-clock-o"></i> 27 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">Feds will formally recall Samsung Galaxy Note 7</a>
+                                </h4>
+                            <p class="card-description">
+                                Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog5.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-success">SEO</h6>
+                            <p> <i class="fa fa-clock-o"></i> 26 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">5 SEO secrets you’ll be surprised you didn’t know​</a>
+                                </h4>
+                            <p class="card-description">
+                                Getting your site to rank in Google can be a tough slog. It requires knowledge of current ranking factors, as well as the time and ability to optimize<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="blog-single.html">
+                                <img class="img img-raised img-responsive" src="img/blog/blog6.jpg" alt="img" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-danger">Typhography</h6>
+                            <p> <i class="fa fa-clock-o"></i>15 September 2016</p>
+                            <h4 class="card-title">
+                                    <a href="blog-single.html">Styles come and go. Good design is a language, not a style.</a>
+                            </h4>
+                            <p class="card-description">
+                                Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will<a href="blog-single.html"> Read More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog news -->
+    <!-- Clients -->
+    <section id="clients" class="section clients">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2 class="title">Trusted by Some Amazing People</h2>
+                <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio blanditiis similique deleniti qui error in.</h5>
+            </div>
+            <div class="clients-logo">
+                <div class="slider">
+                    <div class="clients-content">
+                        <a href="#"><img src="img/support/logo1.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo2.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo3.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo4.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"><img src="img/support/logo5.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo1.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo2.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo3.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo4.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo5.png" alt=""></a>
+                    </div>
+                    <div class="clients-content">
+                        <a href="#"> <img src="img/support/logo1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 clients-text">
+                    <h2>What Our Customers Says</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit, nisi similique deserunt asperiores error.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quod, possimus quasi voluptatem vero porro eos architecto minus cupiditate eum.
+                    </p>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="owl-carousel">
+                        <!-- single review -->
+                        <div class="single-review text-center">
+                            <img src="img/users/avatar1.png" alt="" class="img-circle">
+                            <div class="review_content">
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ullam nemo, itaque excepturi suscipit unde.</blockquote>
+                                <div class="review-author">Jane Deo, CEO</div>
+                            </div>
+                        </div>
+                        <!-- //single review -->
+                        <!-- single review -->
+                        <div class="single-review text-center">
+                            <img src="img/users/avatar2.png" alt="" class="img-circle">
+                            <div class="review_content">
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore consequuntur, consequatur ad nesciunt nulla voluptate voluptates.</blockquote>
+                                <div class="review-author">Khan Doe, Manager</div>
+                            </div>
+                        </div>
+                        <!-- //single review -->
+                        <!-- single review -->
+                        <div class="single-review text-center">
+                            <img src="img/users/avatar3.png" alt="" class="img-circle">
+                            <div class="review_content">
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore odit voluptates vero ea, sint! Eligendi?
+                                </blockquote>
+                                <div class="review-author">Alexa, SEO Expert</div>
+                            </div>
+                        </div>
+                        <!-- //single review -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End clients -->
+    <!-- Trail -->
+    <section class="trial" id="trial">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-8 trial-text wow slideInLeft">
+                    <h2 class="trial-title">Omid is extactly what you need.</h2>
+                </div>
+                <div class="col col-sm-4 text-center wow slideInRight">
+                    <button class="btn btn-warning btn-lg trial-btn">Purchase Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End trail -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="container footer-widget">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <a href="#"><img src="img/logo.png" alt="Company logo" class="footer-logo img-responsive"></a>
+                    <div class="social">
+                        <a href="#social"><i class="fa fa-facebook"></i></a>
+                        <a href="#social"><i class="fa fa-twitter"></i></a>
+                        <a href="#social"><i class="fa fa-google-plus"></i></a>
+                        <a href="#social"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#social"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <!-- /Social -->
+                    <hr class="up-hr">
+                    <button class="btn btn-primary light btn-sm">Purchase</button>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Product</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Features</a></li>
+                        <li><a href="#link">Support</a></li>
+                        <li><a href="#link">Help</a></li>
+                        <li><a href="#link">Plan and Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h6 class="typo-light hd">Link</h6>
+                    <ul class="list-1">
+                        <li><a href="#link">Blog</a></li>
+                        <li><a href="#link">About us</a></li>
+                        <li><a href="#link">Privacy</a></li>
+                        <li><a href="#link">Term and Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <div class="newsletter">
+                        <h6 class="typo-light">Newsletter</h6>
+                        <p>Sign up for the latest news &amp; offers.</p>
+                        <div id="subscribe-success"></div>
+                        <form class="form-widget subscribe-form">
+                            <div class="field-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                                <button type="submit" id="submit" class="btn footer-btn btn-primary"><i class="fa fa-envelope-o"></i></button>
+                            </div>
+                            <div class="msg-wrp"></div>
+                        </form>
+                        <!-- /form -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Built with <i class="fa fa-heart"></i> by Bighero 2016</p>
+        </div>
+    </footer>
+    <!-- ./Footer section -->
+    <!--   Core JS Files   -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script src="js/material.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- Color Switcher -->
+    <script type="text/javascript">
+    $(function() {
+
+        $("head").append('<link id="skin-css" rel="stylesheet">');
+
+        $('.skin-colors li').on('click', function() {
+            $('.skins li').removeClass('active');
+            $(this).addClass('active');
+            $('#skin-css').attr('href', 'css/colors/' + $(this).data('skin') + '.css');
+        });
+
+    });
+    </script>
+    <div class="skins">
+        <ul class="skin-colors">
+            <li data-skin="default" style="background-color: #766dcc" class="active"></li>
+            <li data-skin="indigo" style="background-color: #3f51b5"></li>
+            <li data-skin="amethyst" style="background-color: #9b59b6"></li>
+            <li data-skin="blue" style="background-color: #00a3d3"></li>
+            <li data-skin="dodger-blue" style="background-color: #33b3d3"></li>
+            <li data-skin="cyan" style="background-color: #00bcd4"></li>
+            <li data-skin="green" style="background-color: #27ae60"></li>
+            <li data-skin="light-green" style="background-color: #8bc34a"></li>
+            <li data-skin="lime" style="background-color: #cddc39"></li>
+            <li data-skin="orange" style="background-color: #f39c12"></li>
+            <li data-skin="amber" style="background-color: #ffc107"></li>
+            <li data-skin="pink" style="background-color: #ea4c89"></li>
+            <li data-skin="red" style="background-color: #D64343"></li>
+            <li data-skin="teal" style="background-color: #009688"></li>
+        </ul>
+        <span class="skin-toggler"><i class="fa fa-gear"></i></span>
+    </div>
+    <!-- END Skin switcher -->
+</body>
+
+
+<!-- Mirrored from www.upplanet.com/bighero/omid-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 06:28:57 GMT -->
+</html>
